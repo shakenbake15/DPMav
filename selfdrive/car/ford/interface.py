@@ -18,7 +18,7 @@ class CarInterface(CarInterfaceBase):
     # These cars are dashcam only until the port is finished
     ret.dashcamOnly = False
 
-    ret.radarUnavailable = False
+    ret.radarUnavailable = True
     ret.steerControlType = car.CarParams.SteerControlType.angle
     ret.steerActuatorDelay = 0.2
     ret.steerLimitTimer = 1.0
