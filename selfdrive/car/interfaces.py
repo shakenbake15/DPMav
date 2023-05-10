@@ -284,8 +284,8 @@ class CarInterfaceBase(ABC):
   def apply(self, c: car.CarControl, now_nanos: int) -> Tuple[car.CarControl.Actuators, List[bytes]]:
     pass
 
-  def create_common_events(self, cs_out, extra_gears=GearShifter.low, pcm_enable=True, allow_enable=True,
-                           enable_buttons=(ButtonType.accelCruise, ButtonType.decelCruise)):
+  def create_common_events(self, cs_out, extra_gears=(GearShifter.low,GearShifter.eco), pcm_enable=True, allow_enable=True,
+                           enable_buttons=(ButtonType.accelCruise,ButtonType.decelCruise)):
     events = Events()
 
     if cs_out.doorOpen:
