@@ -724,7 +724,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
 
   EventName.wrongGear: {
     # ET.SOFT_DISABLE: user_soft_disable_alert(_("Gear not D")),
-    ET.NO_ENTRY: NoEntryAlert(_("Gear not D")),
+    ET.NO_ENTRY: NoEntryAlert(_("Gear not D or L")),
   },
 
   # This alert is thrown when the calibration angles are outside of the acceptable range.
